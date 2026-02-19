@@ -1,0 +1,170 @@
+@import url(variaveis.css);
+
+/*MAIN ESTILO*/
+main {
+    min-height: 100vh;
+    background-image: url(/src/img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*---------------*/
+
+/*TITLES*/
+
+.titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+}
+
+.itens-title {
+    margin: 120px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 3.5rem;
+    color: var(--color-letras);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    color: var(--color-letras);
+}
+
+/*--------------------------*/
+
+.img {
+    width: 80px;
+}
+
+.cards-itens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas */
+    gap: 30px;
+    /* espaço entre os cards */
+
+    background: rgba(91, 87, 87, 0.4);
+    /* fundo transparente */
+    backdrop-filter: blur(10px);
+    /* efeito embaçado */
+    -webkit-backdrop-filter: blur(10px);
+    /* suporte Edge/Chrome */
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.372);
+}
+
+.card-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.indent-item {
+    color: var(--color-letras);
+    text-transform: uppercasearqui;
+}
+
+button {
+    font-size: 3.5rem;
+    color: var(--color-letras);
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    outline: none;
+}
+
+/*SECTION PROJETOS*/
+/* Container principal dos projetos */
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Estilizado */
+.projeto {
+    background-color: var(--color-card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    /* Garante que a imagem siga o arredondamento */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Efeito de Hover no Card */
+.projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 212, 255, 0.2);
+    border-color: var(--color-accent);
+}
+
+/* Imagem do Projeto */
+.imagem-project {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: 0.4s;
+}
+
+.projeto:hover .imagem-project {
+    filter: brightness(1);
+}
+
+/* Conteúdo de texto */
+.title-project {
+    padding: 20px 20px 10px;
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--color-accent);
+}
+
+.description {
+    padding: 0 20px 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ccc;
+    flex-grow: 1;
+}
+
+/* Botão Chamativo */
+.btn-acess {
+    margin: 0 20px 20px;
+    background: transparent;
+    color: var(--color-letras);
+    border: 2px solid var(--color-accent);
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.btn-acess:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    box-shadow: 0 0 20px var(--color-accent);
+}

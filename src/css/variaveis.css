@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-background: #0a0a35;
+    --color-letras: #ffff;
+    --font-letras:  "Roboto", sans-serif;
+    --color-accent: #00d4ff; /* Um azul ciano para dar destaque */
+    --color-card-bg: #15154d; /* Um tom levemente mais claro que o fundo */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-background);
+    font-family: var(--font-letras);
+}
